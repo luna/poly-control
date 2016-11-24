@@ -1,9 +1,9 @@
--- This file has been generated from package.yaml by hpack version 0.14.0.
+-- This file has been generated from package.yaml by hpack version 0.15.0.
 --
 -- see: https://github.com/sol/hpack
 
 name:           poly-control
-version:        1.0.1
+version:        1.0.2
 synopsis:       This package provides abstraction for polymorphic controls, like PolyMonads or PolyApplicatives.
 category:       Data
 stability:      experimental
@@ -24,7 +24,6 @@ library
   ghc-options: -Wall -O2
   build-depends:
       base >=4.6 && <4.10
-    , lens
   exposed-modules:
       Control.Applicative.Poly
       Control.Monad.Poly

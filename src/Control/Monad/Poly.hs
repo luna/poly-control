@@ -1,10 +1,13 @@
 {-# LANGUAGE UndecidableInstances #-}
 
-module Control.Monad.Poly (module Control.Monad.Poly, module X) where
+module Control.Monad.Poly (
+      PolyMonad(..)
+    , polyBind
+    , polyJoin
+    ) where
 
 import Prelude
 import Control.Applicative.Poly
-import Control.Applicative.Poly as X (PolyBind, MonoBind)
 
 -- === Types ===
 
@@ -19,4 +22,3 @@ polyBind = (>>>=)
 
 polyJoin :: PolyMonad m n => m (n a) -> PolyBind m n a
 polyJoin = (>>>= id)
-
