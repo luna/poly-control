@@ -7,7 +7,7 @@ default-extensions: [ConstraintKinds, DataKinds, DefaultSignatures, DeriveDataTy
   EmptyDataDecls, FlexibleContexts, FlexibleInstances, GeneralizedNewtypeDeriving,
   InstanceSigs, LambdaCase, MultiParamTypeClasses, OverloadedStrings, StandaloneDeriving,
   TemplateHaskell, TupleSections, TypeOperators, ViewPatterns, TypeFamilies]
-dependencies: [base >=4.6 && <4.10]
+dependencies: [base >=4.6 && <4.10, lens]
 ghc-options: [-Wall, -O2]
 homepage: https://github.com/wdanilo/poly-control
 library:
